@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    
+  </head>
+  <body>
+    <div class="app grid">
+
+        <div class="app__left">
+            <div class="sidebar-menu">
+              <div class="sidebar-menu__logo">
+                <img src="./assets/images/music-logo-png-2349.png" alt="" srcset="" />
+              </div>
+              <ul class="sidebar-menu__list">
+                <li class="sidebar-menu__item">
+                  <a href="#" class="sidebar-menu__link">
+                    <span class="sidebar-menu__icon">
+                      <i class="bx bxs-home"></i>
+                    </span>
+                    <span class="sidebar-menu__text">trang chu </span>
+                  </a>
+                </li>
+                <li class="sidebar-menu__item active">
+                  <a href="#" class="sidebar-menu__link">
+                    <span class="sidebar-menu__icon">
+                      <i class="bx bxs-home"></i>
+                    </span>
+                    <span class="sidebar-menu__text">kham pha </span>
+                  </a>
+                </li>
+                <li class="sidebar-menu__item">
+                  <a href="#" class="sidebar-menu__link">
+                    <span class="sidebar-menu__icon">
+                      <i class="bx bxs-home"></i>
+                    </span>
+                    <span class="sidebar-menu__text">ca nhan </span>
+                  </a>
+                </li>
+                <li class="sidebar-menu__item">
+                  <a href="#" class="sidebar-menu__link">
+                    <span class="sidebar-menu__icon">
+                      <i class="bx bxs-home"></i>
+                    </span>
+                    <span class="sidebar-menu__text">home </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+        
+        <div class="app__right">
+          <div class="play-music">
+            <div class="play-music__left">
+              <div class="play-music__cd">
+                <img src="https://haycafe.vn/wp-content/uploads/2021/12/Anh-nen-thien-nhien-tuyet-dep.jpg" alt="">
+                <span class="wave">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <div class="play-music__information">
+                <span class="play-music__information__name">
+                  Mot buoc yeu van dam dau Mot buoc yeu van dam dau
+                </span>
+                <span class="play-music__information__singer">
+                  Mr.Siro
+                </span>
+              </div>
+            </div>
+            <div class="play-music__center">
+                <div class="play-music__control">
+                  <div class="play-music__control__icon control__random">
+                    <i class='bx bx-shuffle'></i>
+                    <span class="tooltip-text">Phat ngau nhien</span>
+                  </div>
+                  <div class="play-music__control__icon control__previous">
+                    <i class='bx bx-skip-previous'></i>
+                  </div>
+                  <div class="play-music__control__icon control__play">
+                    <i class='bx bx-play-circle' ></i>
+                  </div>
+                  <div class="play-music__control__icon control__next">
+                    <i class='bx bx-skip-next' ></i>
+                  </div>
+                  <div class="play-music__control__icon control__repeat">
+                    <i class='bx bx-repeat'></i>
+                    <span class="tooltip-text">Phat lai tat ca</span>
+                  </div>
+                </div>
+                <div class="play-music__range">
+                  <span class="play-music__range__time">04:29</span>
+                  <div class="play-music__range__bar">
+                    <input type="range" class="input-range" name="" id="">
+                    <div class="play-music__range__progress"></div>
+                    <div class="play-music__range__dot"></div>
+                  </div>
+                  <span class="play-music__range__time">04:29</span>
+                </div>
+            </div>
+            <div class="play-music__right">
+              <div class="play-music__right__top">
+                <div class="play-music__right__icon">
+                  <i class='bx bx-heart'></i>
+                </div>
+                <div class="play-music__right__icon">
+                  <i class='bx bx-download'></i>
+                </div>
+                <div class="play-music__right__icon">
+                  <i class='bx bx-dots-horizontal-rounded' ></i>
+                </div>
+              </div>
+              <div class="play-music__right__bottom">
+                <div class="play-music__right__icon">
+                  <i class='bx bxs-volume-full' ></i>
+                </div>
+                <div class="play-music__right__volume-bar">
+                  <div class="play-music__right__volume-progress"></div>
+                  <div class="play-music__right__volume-dot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="row header-wrapper">
+              <div class="col l-8">
+                <div class="header__search">
+                  <input class="header__search-input" placeholder="search" type="search" name="search" id="">
+                  <i class='bx bx-search header__search-icon'></i>
+                </div>
+              </div>
+              <div class="col l-4">
+                <div class="header__right">
+                  <div class="header__notification">
+                    <i class='bx bxs-bell' ></i>
+                    <span>3</span>
+                  </div>
+                  <div class="header__user">
+                    <i class='bx bx-chevron-down' ></i>
+                    <div class="header__user-text">Hi, JohnWick</div>
+                    <div class="header__user-avatar">
+                      <img src="https://haycafe.vn/wp-content/uploads/2021/12/Anh-nen-thien-nhien-tuyet-dep.jpg" alt="" srcset="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="section">
+            <div class="section-header">
+              <h2 class="section-title">co the ban muon nghe</h2>
+              <a href="#" class="section-link">
+                <span>xem tat ca</span> 
+                <i class='bx bxs-chevron-right'></i>
+              </a>
+            </div>
+            <div class="row">
+              <div class="col l-2-4">
+                <a href="#" class="card card__singer-hot">
+                  <div class="card__img">
+                    <img src="https://haycafe.vn/wp-content/uploads/2021/12/Anh-nen-thien-nhien-tuyet-dep.jpg" alt="" srcset="">
+                  </div>
+                  <span class="card__icon">
+                    <i class='bx bx-play-circle'></i>
+                  </span>
+                </a>
+              </div>
+              <div class="col l-2-4">
+                <a href="#" class="card card__singer-hot">
+                  <div class="card__img">
+                    <img src="https://haycafe.vn/wp-content/uploads/2021/12/Anh-nen-thien-nhien-tuyet-dep.jpg" alt="" srcset="">
+                  </div>
+                  <span class="card__icon">
+                    <i class='bx bx-play-circle'></i>
+                  </span>
+                </a>
+              </div>
+              <div class="col l-2-4">
+                <a href="#" class="card card__singer-hot">
+                  <div class="card__img">
+                    <img src="https://haycafe.vn/wp-content/uploads/2021/12/Anh-nen-thien-nhien-tuyet-dep.jpg" alt="" srcset="">
+                  </div>
+                  <span class="card__icon">
+                    <i class='bx bx-play-circle'></i>
+                  </span>
+                </a>
+              </div>
+              <div class="col l-2-4">
+                <a href="#" class="card card__singer-hot">
+                  <div class="card__img">
+                    <img src="https://haycafe.vn/wp-content/uploads/2021/12/Anh-nen-thien-nhien-tuyet-dep.jpg" alt="" srcset="">
+                  </div>
+                  <span class="card__icon">
+                    <i class='bx bx-play-circle'></i>
+                  </span>
+                </a>
+              </div>
+              <div class="col l-2-4">
+                <a href="#" class="card card__singer-hot">
+                  <div class="card__img">
+                    <img src="https://haycafe.vn/wp-content/uploads/2021/12/Anh-nen-thien-nhien-tuyet-dep.jpg" alt="" srcset="">
+                  </div>
+                  <span class="card__icon">
+                    <i class='bx bx-play-circle'></i>
+                  </span>
+                </a>
+              </div>
+            </div> 
+          </section>
+          <section class="section">
+            <div class="section-header">
+              <h2 class="section-title">co the ban muon nghe </h2>
+              <a href="#" class="section-link">
+                <span>xem tat ca</span> 
+                <i class='bx bxs-chevron-right'></i>
+              </a>
+            </div>
+            <div class="row">
+              <div class="col l-2-4">
+                <a href="#" class="card card__singer-favorite">
+                  <div class="card__img">
+                    <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/d/a/c/6/dac69cd1300a635c193c0f03e8d6d617.jpg" alt="" srcset="">
+                  </div>
+                  <span class="card__icon">
+                    <i class='bx bx-play-circle'></i>
+                  </span>
+                </a>
+              </div>
+              <div class="col l-2-4">
+                <a href="#" class="card card__singer-favorite">
+                  <div class="card__img">
+                    <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/d/a/c/6/dac69cd1300a635c193c0f03e8d6d617.jpg" alt="" srcset="">
+                  </div>
+                  <span class="card__icon">
+                    <i class='bx bx-play-circle'></i>
+                  </span>
+                </a>
+              </div>
+              <div class="col l-2-4">
+                <a href="#" class="card card__singer-favorite">
+                  <div class="card__img">
+                    <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/d/a/c/6/dac69cd1300a635c193c0f03e8d6d617.jpg" alt="" srcset="">
+                  </div>
+                  <span class="card__icon">
+                    <i class='bx bx-play-circle'></i>
+                  </span>
+                </a>
+              </div>
+              
+              <div class="col l-2-4">
+                <a href="#" class="card card__singer-favorite">
+                  <div class="card__img">
+                    <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/d/a/c/6/dac69cd1300a635c193c0f03e8d6d617.jpg" alt="" srcset="">
+                  </div>
+                  <span class="card__icon">
+                    <i class='bx bx-play-circle'></i>
+                  </span>
+                </a>
+              </div>
+              <div class="col l-2-4">
+                <a href="#" class="card card__singer-favorite">
+                  <div class="card__img">
+                    <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/d/a/c/6/dac69cd1300a635c193c0f03e8d6d617.jpg" alt="" srcset="">
+                  </div>
+                  <span class="card__icon">
+                    <i class='bx bx-play-circle'></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section class="section">
+            <div class="section-header">
+              <h2 class="section-title">top 100 bai hat yeu thich nhat</h2>
+              <a href="#" class="section-link">
+                <span>xem tat ca</span> 
+                <i class='bx bxs-chevron-right'></i>
+              </a>
+            </div>
+            <div class="song">
+              <div class="song__list">
+                <div class="song__item">
+                  <div class="song__item__left">
+                    <div class="song__serial">#1</div>
+                    <div class="song__img">
+                      <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/d/a/c/6/dac69cd1300a635c193c0f03e8d6d617.jpg" alt="" srcset="">
+                    </div>
+                    <div class="song__information">
+                      <h3 class="song__information__name">despacito</h3>
+                      <span class="song__information__singer">Luis Fonsi</span>
+                    </div>
+                  </div>
+                  <div class="song__item__center">
+                    <div class="song__name">
+                      despacito
+                    </div>
+                  </div>
+                  <div class="song__item__right">
+                      <div class="song__listens">
+                      <span class="song__listens__icon">
+                        <i class='bx bxs-music' ></i>
+                      </span>
+                      <span class="song__listens__number">
+                        350000
+                      </span>
+                    </div>
+                    <div class="song__time">
+                      <span class="song__time__icon">
+                        <i class='bx bx-time'></i>
+                      </span>
+                      <span class="song__time__number">
+                        4:04
+                      </span>
+                    </div>
+                    <div class="song__favorite">
+                      <span class="song__favorite__icon">
+                        <i class='bx bx-heart' ></i>
+                      </span>
+                      <span class="tooltip-text">Yeu thich</span>
+                    </div>
+                    <div class="song__action">
+                      <span class="song__action__icon">
+                        <i class='bx bx-dots-horizontal-rounded' ></i>
+                      </span>
+                      <span class="tooltip-text">Khac</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="song__item">
+                  <div class="song__item__left">
+                    <div class="song__serial">#1</div>
+                    <div class="song__img">
+                      <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/d/a/c/6/dac69cd1300a635c193c0f03e8d6d617.jpg" alt="" srcset="">
+                    </div>
+                    <div class="song__information">
+                      <h3 class="song__information__name">despacito</h3>
+                      <span class="song__information__singer">Luis Fonsi</span>
+                    </div>
+                  </div>
+                  <div class="song__item__center">
+                    <div class="song__name">
+                      despacito
+                    </div>
+                  </div>
+                  <div class="song__item__right">
+                      <div class="song__listens">
+                      <span class="song__listens__icon">
+                        <i class='bx bxs-music' ></i>
+                      </span>
+                      <span class="song__listens__number">
+                        350000
+                      </span>
+                    </div>
+                    <div class="song__time">
+                      <span class="song__time__icon">
+                        <i class='bx bx-time'></i>
+                      </span>
+                      <span class="song__time__number">
+                        4:04
+                      </span>
+                    </div>
+                    <div class="song__favorite">
+                      <span class="song__favorite__icon">
+                        <i class='bx bx-heart' ></i>
+                      </span>
+                      <span class="tooltip-text">Yeu thich</span>
+                    </div>
+                    <div class="song__action">
+                      <span class="song__action__icon">
+                        <i class='bx bx-dots-horizontal-rounded' ></i>
+                      </span>
+                      <span class="tooltip-text">Khac</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="song__item">
+                  <div class="song__item__left">
+                    <div class="song__serial">#1</div>
+                    <div class="song__img">
+                      <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/d/a/c/6/dac69cd1300a635c193c0f03e8d6d617.jpg" alt="" srcset="">
+                    </div>
+                    <div class="song__information">
+                      <h3 class="song__information__name">despacito</h3>
+                      <span class="song__information__singer">Luis Fonsi</span>
+                    </div>
+                  </div>
+                  <div class="song__item__center">
+                    <div class="song__name">
+                      despacito
+                    </div>
+                  </div>
+                  <div class="song__item__right">
+                      <div class="song__listens">
+                      <span class="song__listens__icon">
+                        <i class='bx bxs-music' ></i>
+                      </span>
+                      <span class="song__listens__number">
+                        350000
+                      </span>
+                    </div>
+                    <div class="song__time">
+                      <span class="song__time__icon">
+                        <i class='bx bx-time'></i>
+                      </span>
+                      <span class="song__time__number">
+                        4:04
+                      </span>
+                    </div>
+                    <div class="song__favorite">
+                      <span class="song__favorite__icon">
+                        <i class='bx bx-heart' ></i>
+                      </span>
+                      <span class="tooltip-text">Yeu thich</span>
+                    </div>
+                    <div class="song__action">
+                      <span class="song__action__icon">
+                        <i class='bx bx-dots-horizontal-rounded' ></i>
+                      </span>
+                      <span class="tooltip-text">Khac</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="song__item">
+                  <div class="song__item__left">
+                    <div class="song__serial">#1</div>
+                    <div class="song__img">
+                      <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/d/a/c/6/dac69cd1300a635c193c0f03e8d6d617.jpg" alt="" srcset="">
+                    </div>
+                    <div class="song__information">
+                      <h3 class="song__information__name">despacito</h3>
+                      <span class="song__information__singer">Luis Fonsi</span>
+                    </div>
+                  </div>
+                  <div class="song__item__center">
+                    <div class="song__name">
+                      despacito
+                    </div>
+                  </div>
+                  <div class="song__item__right">
+                      <div class="song__listens">
+                      <span class="song__listens__icon">
+                        <i class='bx bxs-music' ></i>
+                      </span>
+                      <span class="song__listens__number">
+                        350000
+                      </span>
+                    </div>
+                    <div class="song__time">
+                      <span class="song__time__icon">
+                        <i class='bx bx-time'></i>
+                      </span>
+                      <span class="song__time__number">
+                        4:04
+                      </span>
+                    </div>
+                    <div class="song__favorite">
+                      <span class="song__favorite__icon">
+                        <i class='bx bx-heart' ></i>
+                      </span>
+                      <span class="tooltip-text">Yeu thich</span>
+                    </div>
+                    <div class="song__action">
+                      <span class="song__action__icon">
+                        <i class='bx bx-dots-horizontal-rounded' ></i>
+                      </span>
+                      <span class="tooltip-text">Khac</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </div>
+    <script src="./assets/js/music.js"></script>
+  </body>
+</html>
